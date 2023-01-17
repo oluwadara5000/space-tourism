@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap");
+
+/* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* .testing{
+  background-color: red;
+  width: 700px;
+  height: 800px;
+} */
+
+.moon-container, .mars-container, .europa-container, .titan-container{
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
+  background-size: contain;
+  height: 100vh;
+}
+
+section {
+  width: 1440px;
+  padding: 60px 0 1px 0;
+  margin: auto auto;
+  height: max-content;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 55px;
+  color: #ffffff;
+  margin-bottom: 90px;
+}
+
+.header ul {
+  display: flex;
+  gap: 48px;
+  padding: 0px 165px 0px 123px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+}
+
+.header ul > li {
+  list-style-type: none;
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  padding: 37px 0;
+  width: max-content;
+  cursor: pointer;
+}
+
+.header ul > li:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 50%);
+}
+
+.header ul > li span {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  margin-right: 12px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#destination {
+  border-bottom: 3px solid #ffffff;
+}
+
+.header a:active {
+  border-bottom: 3px solid #ffffff;
+}
+
+.header img {
+  margin-right: 64px;
+}
+
+hr {
+  background: #ffffff;
+  height: 1px;
+  width: 410px;
+  opacity: 0.25;
+}
+
+section > h1 span {
+  font-weight: 700;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin-right: 28px;
+}
+
+section > h1 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #ffffff;
+  margin-left: 166px;
+  margin-bottom: 90px;
+}
+
+.container {
+  display: flex;
+  height: max-content;
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 140px;
+}
+
+.container ul > li {
+  list-style-type: none;
+  display: inline-block;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  padding-bottom: 12px;
+  margin-right: 35px;
+  margin-bottom: 37px;
+  cursor: pointer;
+}
+
+.container ul > li:hover{
+  border-bottom: 3px solid rgba(255, 255, 255, 50%);
+}
+
+.container ul > li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#moon, #mars, #europa, #titan {
+  border-bottom: 3px solid #ffffff;
+}
+
+.right {
+  width: 30%;
+}
+
+.destination {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.right p {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+.container hr {
+  margin-bottom: 38px;
+  margin-top: 64px;
+}
+
+.details {
+  display: flex;
+  gap: 79px;
+}
+
+.details-left > p,
+.details-right > p {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #d0d6f9;
+  margin-bottom: 12px;
+}
+
+.details-left > h1,
+.details-right > h1 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
