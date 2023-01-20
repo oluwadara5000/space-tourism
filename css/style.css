@@ -151,18 +151,7 @@ font-size: 18px;
 line-height: 34px;
 }
 
-.right{
-  padding: 110px 63px;
-  background-color: #ffffff;
-  margin-right: 165px;
-  border-radius: 50%;
-  height: 75%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.right p{
+button{
   font-family: 'Bellefair';
 font-style: normal;
 font-weight: 400;
@@ -170,4 +159,27 @@ font-size: 32px;
 line-height: 37px;
 letter-spacing: 2px;
 color: #0B0D17;
+background-color: #ffffff;
+border: 0;
+padding: 115px 63px;
+position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
 }
+
+.right:has(button:hover) {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+.right:has(button:hover) button{
+  bottom: 14%;
+  right: 2.5%;
+  transition: 0.3s;
+}
+
+

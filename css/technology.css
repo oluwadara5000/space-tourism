@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap");
+
+/* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* .testing{
+  background-color: red;
+  width: 700px;
+  height: 800px;
+} */
+
+section {
+  width: 1440px;
+  padding: 60px 0 1px 0;
+  margin: auto auto;
+  height: max-content;
+}
+
+.vehicle-container,
+.spaceport-container,
+.capsule-container {
+  height: 100vh;
+  background-image: url(/assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 55px;
+  color: #ffffff;
+  margin-bottom: 76px;
+}
+
+.header ul {
+  display: flex;
+  gap: 48px;
+  padding: 0px 165px 0px 123px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+}
+
+.header ul > li {
+  list-style-type: none;
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  padding: 37px 0;
+  width: max-content;
+  cursor: pointer;
+}
+
+.header ul > li:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 50%);
+}
+
+.header ul > li span {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  margin-right: 12px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#technology {
+  border-bottom: 3px solid #ffffff;
+}
+
+.header a:active {
+  border-bottom: 3px solid #ffffff;
+}
+
+.header img {
+  margin-right: 64px;
+}
+
+hr {
+  background: #ffffff;
+  height: 1px;
+  width: 410px;
+  opacity: 0.25;
+}
+
+section > h1 span {
+  font-weight: 700;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin-right: 28px;
+}
+
+section > h1 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #ffffff;
+  margin-left: 166px;
+  margin-bottom: 26px;
+}
+
+.container{
+  display: flex;
+  position: relative;
+}
+
+.serial-number{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-right: 80px;
+  align-items: center;
+  margin-left: 165px;
+  padding-top: 111px;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.serial-number a{
+  line-height: 37px;
+  margin: 22px 0;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.serial-number span{
+  font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+text-align: center;
+letter-spacing: 2px;
+padding: 21.5px 34px;
+border-radius: 50%;
+border: 1px solid rgba(255, 255, 255, 0.25);
+cursor: pointer;
+}
+
+.serial-number span:hover{
+  border: 1px solid #ffffff;
+}
+
+#one, #two, #three{
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.container-writeup{
+  display: flex;
+  flex-direction: column;
+  width: 32.7%;
+  padding-top: 111px;
+}
+
+.container-writeup p{
+  font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 2.7px;
+color: #D0D6F9;
+margin-bottom: 11px;
+}
+
+.container-writeup h1{
+  font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 56px;
+line-height: 64px;
+color: #FFFFFF;
+margin-bottom: 17px;
+}
+
+#paragraph{
+  font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+color: #D0D6F9;
+}
+
+.image{
+  position: absolute;
+  right: 0;
+}
