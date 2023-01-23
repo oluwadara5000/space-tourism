@@ -17,17 +17,18 @@ font-family: 'Bellefair', serif; */
   height: 800px;
 } */
 
-body{
-  padding: 53px 0;
+body {
+  padding: 25px 0;
   background-image: url(/assets/home/background-home-desktop.jpg);
   background-size: cover;
+  height: 100vh;
 }
 
 section {
   width: 1440px;
-  padding: 40px 0;
+  padding-top: 40px;
   margin: auto auto;
-  height: max-content;
+  height: 900px;
 }
 
 .header {
@@ -36,7 +37,71 @@ section {
   justify-content: space-between;
   margin-left: 55px;
   color: #ffffff;
-  margin-bottom: 250px;
+  margin-bottom: 251px;
+}
+
+.panel {
+  display: none;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  padding: 34px 27px 0 32px;
+  width: 254px;
+  right: 0;
+  height: max-content;
+  transition: width 0.2s linear;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  height: 100vh;
+}
+
+.panel ul > li {
+  list-style-type: none;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: max-content;
+  margin-bottom: 32px;
+}
+
+.panel ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.panel ul > li span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+  margin-right: 12px;
+}
+
+.panel img {
+  width: 20px;
+  height: 20px;
+}
+
+.panel-icon {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 65px;
+}
+
+#nav-bar {
+  display: none;
+}
+
+#mobile-logo {
+  display: none;
 }
 
 .header ul {
@@ -50,7 +115,7 @@ section {
 .header ul > li {
   list-style-type: none;
   display: inline-block;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -62,12 +127,12 @@ section {
   cursor: pointer;
 }
 
-.header ul > li:hover{
-  border-bottom: 3px solid rgba(255,255,255, 50%);
+.header ul > li:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 50%);
 }
 
 .header ul > li span {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -76,16 +141,16 @@ section {
   margin-right: 12px;
 }
 
-.header a{
+.header a {
   text-decoration: none;
   color: #ffffff;
 }
 
-#home{
+#home {
   border-bottom: 3px solid #ffffff;
 }
 
-.header a:active{
+.header a:active {
   border-bottom: 3px solid #ffffff;
 }
 
@@ -110,11 +175,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   gap: 386px;
-  position: relative;
-  margin-bottom: 119px;
+  align-items: flex-end;
 }
 
-.left{
+.left {
   margin-left: 165px;
   display: flex;
   flex-direction: column;
@@ -125,7 +189,7 @@ h1 {
 
 .left h5 {
   color: #d0d6f9;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -144,42 +208,370 @@ h1 {
 
 .left p {
   color: #d0d6f9;
-  font-family: 'Barlow Condensed', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 34px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
 }
 
-button{
-  font-family: 'Bellefair';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 37px;
-letter-spacing: 2px;
-color: #0B0D17;
-background-color: #ffffff;
-border: 0;
-padding: 115px 63px;
-position: absolute;
-  right: 0;
-  bottom: 0;
+button {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  color: #0b0d17;
+  background-color: #ffffff;
+  border: 0;
+  padding: 115px 63px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.right:has(button:hover) {
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: 0.3s;
+@media screen and (min-width: 1440px) {
+  button {
+    text-align: center;
+  }
+
+  .right {
+    height: 382px;
+    width: 382px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .right:has(button:hover) {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+  }
 }
 
-.right:has(button:hover) button{
-  bottom: 14%;
-  right: 2.5%;
-  transition: 0.3s;
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* MEDIA QUERIES */
+/* FOR SCREENS 320px and BELOW */
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+  }
+
+  section {
+    width: 100%;
+    margin: 0;
+    padding: 25px 0;
+  }
+
+  .header {
+    margin-left: 25px;
+    margin-bottom: 48px;
+  }
+
+  #desktop-logo {
+    display: block;
+  }
+
+  .header img {
+    margin: 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .header ul {
+    display: none;
+  }
+
+  #nav-bar,
+  #cancel {
+    display: block;
+    margin-right: 25px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    margin-bottom: 48px;
+    gap: 80px;
+  }
+
+  .left {
+    width: 100%;
+    padding: 0 25px;
+    margin: 0;
+    text-align: center;
+    gap: 16x;
+  }
+
+  .left h5 {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px;
+  }
+
+  .left h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .left p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  button {
+    padding: 65px 0;
+    right: 25%;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    width: 150px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 376px TO 767px */
 
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  body {
+    background-image: url(/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    height: max-content;
+    padding: 0;
+    margin: auto;
+  }
+
+  section {
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+    background-color: none;
+  }
+
+  .header {
+    margin-left: 25px;
+    margin-bottom: 48px;
+  }
+
+  #desktop-logo {
+    display: block;
+  }
+
+  .header img {
+    margin: 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .header ul {
+    display: none;
+  }
+
+  #nav-bar {
+    display: block;
+    margin-right: 25px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    margin-bottom: 48px;
+    gap: 80px;
+  }
+
+  .left {
+    width: 100%;
+    padding: 0 25px;
+    margin: 0;
+    text-align: center;
+    gap: 16x;
+  }
+
+  .left h5 {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px;
+  }
+
+  .left h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .left p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  button {
+    padding: 65px 0;
+    right: 25%;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    width: 150px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS BETWEEN 768px AND 1439px */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  body {
+    background-image: url(/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .header {
+    margin-left: 39px;
+    margin-bottom: 106px;
+  }
+
+  .header ul {
+    padding: 0 46px 0 48px;
+    gap: 38px;
+  }
+
+  .header ul > li {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    gap: 156px;
+  }
+
+  .left {
+    margin: 0;
+    width: 450px;
+    margin: auto;
+  }
+
+  .left h5 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .left p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  button {
+    padding: 65px 0;
+    /* right: 25%; */
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    width: 242px;
+    height: 242px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 90px;
+  }
+}
