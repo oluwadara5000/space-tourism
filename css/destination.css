@@ -17,7 +17,10 @@ font-family: 'Bellefair', serif; */
   height: 800px;
 } */
 
-.moon-container, .mars-container, .europa-container, .titan-container{
+.moon-container,
+.mars-container,
+.europa-container,
+.titan-container {
   background-image: url(/assets/destination/background-destination-desktop.jpg);
   background-size: contain;
   height: 100vh;
@@ -81,8 +84,67 @@ section {
   color: #ffffff;
 }
 
+.panel {
+  background-color: #ffffff;
+  position: absolute;
+  width: 0;
+  top: 0;
+  padding: 34px 27px 0 32px;
+  right: 0;
+   height: max-content;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  height: 100vh;
+  transition: 0.2s ease-in-out;
+}
+
+.panel ul > li {
+  list-style-type: none;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: max-content;
+  margin-bottom: 32px;
+}
+
+.panel ul > li > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.panel ul > li span {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+  margin-right: 12px;
+}
+
+.panel img {
+  width: 20px;
+  height: 20px;
+}
+
+.panel-icon {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 65px;
+}
+
 #destination {
   border-bottom: 3px solid #ffffff;
+}
+
+.nav-bar{
+  display: none;
 }
 
 .header a:active {
@@ -93,7 +155,7 @@ section {
   margin-right: 64px;
 }
 
-hr {
+.header hr {
   background: #ffffff;
   height: 1px;
   width: 410px;
@@ -143,16 +205,19 @@ section > h1 {
   cursor: pointer;
 }
 
-.container ul > li:hover{
+.container ul > li:hover {
   border-bottom: 3px solid rgba(255, 255, 255, 50%);
 }
 
-.container ul > li a{
+.container ul > li a {
   text-decoration: none;
   color: #ffffff;
 }
 
-#moon, #mars, #europa, #titan {
+#moon,
+#mars,
+#europa,
+#titan {
   border-bottom: 3px solid #ffffff;
 }
 
@@ -170,7 +235,7 @@ section > h1 {
   margin-bottom: 20px;
 }
 
-.right p {
+.paragraph {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
@@ -189,8 +254,7 @@ section > h1 {
   gap: 79px;
 }
 
-.details-left > p,
-.details-right > p {
+.details p {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
@@ -202,8 +266,7 @@ section > h1 {
   margin-bottom: 12px;
 }
 
-.details-left > h1,
-.details-right > h1 {
+.details h1 {
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
@@ -213,4 +276,128 @@ section > h1 {
   color: #ffffff;
 }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* MEDIA QUERIES */
+/* FOR SCREENS 320px and BELOW */
+@media screen and (max-width: 375px) {
+  .moon-container,
+  .mars-container,
+  .europa-container,
+  .titan-container {
+    background-image: url(/assets/destination/background-destination-mobile.jpg);
+  }
 
+  .header {
+   margin: 0px 25px 48px 25px;
+  }
+
+  .header img {
+    margin: 0;
+  }
+  .header ul {
+    display: none;
+  }
+
+  .nav-bar {
+    display: block;
+  }
+
+  section {
+    width: 100%;
+    padding: 25px 0 1px 0;
+  }
+
+  .header hr {
+    display: none;
+  }
+
+  section > h1 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-left: 0;
+  }
+
+  section > h1 span {
+    margin-right: 18px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    gap: 26px;
+  }
+
+  .left {
+    width: 45.3%;
+    margin: auto;
+  }
+
+  .left img {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .paragraph {
+    width: 82.7%;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 32px;
+  }
+
+  .destination {
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+  }
+
+  .container ul {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-bottom: 20px;
+  }
+  .container ul > li {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+
+  .details {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .container hr {
+    width: 82.7%;
+    margin: 0 auto 32px auto;
+  }
+}

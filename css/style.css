@@ -41,18 +41,17 @@ section {
 }
 
 .panel {
-  display: none;
   background-color: #ffffff;
   position: absolute;
+  width: 0;
   top: 0;
   padding: 34px 27px 0 32px;
-  width: 254px;
   right: 0;
   height: max-content;
-  transition: width 0.2s linear;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
   height: 100vh;
+  transition: 0.2s ease-in-out;
 }
 
 .panel ul > li {
@@ -497,7 +496,7 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   body {
-    background-image: url(/assets/home/background-home-mobile.jpg);
+    background-image: url(/assets/home/background-home-tablet.jpg);
     background-size: cover;
     height: 100vh;
     padding: 0;
