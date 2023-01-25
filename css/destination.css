@@ -17,6 +17,12 @@ font-family: 'Bellefair', serif; */
   height: 800px;
 } */
 
+body{
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
+  background-size: contain;
+  /* padding-top: 40px; */
+}
+
 .moon-container,
 .mars-container,
 .europa-container,
@@ -28,18 +34,20 @@ font-family: 'Bellefair', serif; */
 
 section {
   width: 1440px;
-  padding: 60px 0 1px 0;
+  padding: 150px 0 1px 0;
   margin: auto auto;
   height: max-content;
 }
 
 .header {
+  position: sticky;
   display: flex;
   align-items: center;
+  width: 1440px;
   justify-content: space-between;
-  margin-left: 55px;
   color: #ffffff;
-  margin-bottom: 90px;
+  margin: auto;
+  top: 40px;
 }
 
 .header ul {
@@ -86,7 +94,7 @@ section {
 
 .panel {
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   width: 0;
   top: 0;
   padding: 34px 27px 0 32px;
@@ -151,8 +159,9 @@ section {
   border-bottom: 3px solid #ffffff;
 }
 
-.header img {
+#logo {
   margin-right: 64px;
+  margin-left: 55px;
 }
 
 .header hr {
@@ -295,7 +304,7 @@ section > h1 {
 /*  */
 /*  */
 /* MEDIA QUERIES */
-/* FOR SCREENS 320px and BELOW */
+/* FOR SCREENS 375px and BELOW */
 @media screen and (max-width: 375px) {
   .moon-container,
   .mars-container,
@@ -305,11 +314,12 @@ section > h1 {
   }
 
   .header {
-   margin: 0px 25px 48px 25px;
+   margin: 0px 25px 48px 0;
+   width: 100%;
   }
 
-  .header img {
-    margin: 0;
+  #logo {
+    margin-left: 25px;
   }
   .header ul {
     display: none;
@@ -317,11 +327,12 @@ section > h1 {
 
   .nav-bar {
     display: block;
+    margin-right: 25px;
   }
 
   section {
     width: 100%;
-    padding: 25px 0 1px 0;
+    padding: 60px 0 1px 0;
   }
 
   .header hr {
@@ -399,5 +410,282 @@ section > h1 {
   .container hr {
     width: 82.7%;
     margin: 0 auto 32px auto;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 376px TO 767px */
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .moon-container,
+  .mars-container,
+  .europa-container,
+  .titan-container {
+    background-image: url(/assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+  }
+
+  .header {
+   margin: 0px 25px 48px 0;
+   width: 100%;
+  }
+
+  #logo {
+    margin-left: 25px;
+  }
+  .header ul {
+    display: none;
+  }
+
+  .nav-bar {
+    display: block;
+    margin-right: 25px;
+  }
+
+  section {
+    width: 100%;
+    padding: 60px 0 1px 0;
+  }
+
+  .header hr {
+    display: none;
+  }
+
+  section > h1{
+    font-size: 20px;
+line-height: 24px;
+letter-spacing: 3.375px;
+margin-bottom: 60px;
+margin-left: 0;
+text-align: center;
+  }
+
+  section > h1 span{
+    margin-right: 18px;
+    font-size: 20px;
+line-height: 24px;
+letter-spacing: 3.375px
+  }
+
+  .container{
+    flex-direction: column;
+    width: 100%;
+    gap: 26px;
+  }
+
+  .left {
+    width: 45.3%;
+    margin: auto;
+  }
+
+  .left img {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .paragraph {
+    width: 82.7%;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+line-height: 28px;
+text-align: center;
+margin-bottom: 32px;
+  }
+
+  .destination {
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+  }
+
+  .container ul {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-bottom: 20px;
+  }
+  .container ul > li {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+
+  .details {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .container hr {
+    width: 82.7%;
+    margin: 0 auto 32px auto;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS BETWEEN 768px AND 1439px */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .moon-container,
+  .mars-container,
+  .europa-container,
+  .titan-container {
+    background-image: url(/assets/destination/background-destination-tablet.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .header{
+    margin-left: 0;
+    width: 100%;
+display: flex;
+    gap: 2px;
+    margin-bottom: 20px;
+    top: 0;
+  }
+
+  section{
+    padding: 100px 0 1px 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  hr{
+    display: none;
+  }
+
+  .header ul{
+    padding: 0 46px 0 48px;
+    gap: 38px;
+  }
+
+  .header ul > li {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+
+  #logo{
+    margin-left: 39px;
+    margin-right: 0;
+  }
+
+  #nav-bar{
+    display: none;
+  }
+
+  section > h1{
+    font-size: 20px;
+line-height: 24px;
+letter-spacing: 3.375px;
+margin-left: 39px;
+margin-bottom: 20px;
+  }
+
+  section > h1 span{
+    margin-right: 19px;
+  }
+
+  .container{
+    flex-direction: column;
+    width: 100%;
+    gap: 53px
+  }
+
+  .left{
+    width: 39%;
+    margin: auto;
+  }
+
+  .left img{
+    width: 100%;
+  }
+
+  .right{
+    width: 100%;
+  }
+
+  .container ul{
+    width: 37.1%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 0;
+  }
+
+  .container ul > li{
+    font-size: 16px;
+line-height: 19px;
+letter-spacing: 2.7px;
+margin-right: 0;
+margin-bottom: 20px;
+  }
+
+  .destination{
+    font-size: 80px;
+line-height: 92px;
+text-align: center;
+  }
+
+  .paragraph{
+    width: 573px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+line-height: 28px;
+  }
+
+  .container hr {
+    display: block;
+    width: 573px;
+    margin: 0 auto 28px auto;
+  }
+
+  .details{
+    justify-content: center;
   }
 }

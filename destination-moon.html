@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/destination.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="css/destination.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet" />
 
-    <title>Frontend Mentor | Space tourism website</title>
-  </head>
-  <body>
-    <div class="moon-container">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <div class="panel" id="panel">
+    <div class="panel-icon">
+      <img src="/assets/home/cancel.svg" id="cancel" alt="">
+    </div>
+    <ul class="nav-list" id="nav-list">
+      <li id="home"><a href="index.html"><span>00</span> Home</a></li>
+      <li id="destination"><a href="destination-moon.html"><span>01</span> Destination</a></li>
+      <li id="crew"><a href="crew-commander.html"><span>02</span> Crew</a></li>
+      <li id="technology"><a href="technology-vehicle.html"><span>03</span> Technology</a></li>
+    </ul>
+  </div>
+
+  <div class="header" id="header">
+    <img src="/assets/home/Group 2.svg" id="logo" alt="" />
+    <hr />
+    <ul>
+      <li id="home">
+        <a href="index.html"><span>00</span> Home</a>
+      </li>
+      <li id="destination">
+        <a href="destination-moon.html"><span>01</span> Destination</a>
+      </li>
+      <li id="crew">
+        <a href="crew-commander.html"><span>02</span> Crew</a>
+      </li>
+      <li id="technology">
+        <a href="technology-vehicle.html"><span>03</span> Technology</a>
+      </li>
+    </ul>
+
+    <img src="/assets/home/nav-bar.svg" class="nav-bar" id="nav-bar" alt="">
+  </div>
+
+  <div class="moon-container">
     <section id="moon-page">
-      <div class="header">
-        <img src="/assets/home/Group 2.svg" alt="" />
-        <hr />
-        <ul>
-          <li id="home">
-            <a href="index.html"><span>00</span> Home</a>
-          </li>
-          <li id="destination">
-            <a href="destination-moon.html"><span>01</span> Destination</a>
-          </li>
-          <li id="crew">
-            <a href="crew-commander.html"><span>02</span> Crew</a>
-          </li>
-          <li id="technology">
-            <a href="technology-vehicle.html"><span>03</span> Technology</a>
-          </li>
-        </ul>
-
-        <img src="/assets/home/nav-bar.svg" class="nav-bar" id="nav-bar" alt="">
-      </div>
 
       <h1><span>01</span>PICK YOUR DESTINATION</h1>
       <div class="container">
@@ -66,51 +71,30 @@
             <li><a href="#titan-page">TITAN</a></li>
           </ul>
           <h1 class="destination">MOON</h1>
-           <p class="paragraph">
-              See our planet as you’ve never seen it before. A perfect relaxing
-              trip away to help regain perspective and come back refreshed.
-              While you’re there, take in some history by visiting the Luna 2
-              and Apollo 11 landing sites.
-            </p>
-            <hr />
-            <div class="details">
-              <div class="details-left">
-                <p>AVG. DISTANCE</p>
-                <h1>384,400 KM</h1>
-              </div>
-              <div class="details-right">
-                <p>EST. TRAVEL TIME</p>
-                <h1>3 DAYS</h1>
-              </div>
+          <p class="paragraph">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed.
+            While you’re there, take in some history by visiting the Luna 2
+            and Apollo 11 landing sites.
+          </p>
+          <hr />
+          <div class="details">
+            <div class="details-left">
+              <p>AVG. DISTANCE</p>
+              <h1>384,400 KM</h1>
             </div>
+            <div class="details-right">
+              <p>EST. TRAVEL TIME</p>
+              <h1>3 DAYS</h1>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    </div>
+  </div>
 
-    <div class="mars-container">
-      <section id="mars-page">
-      <div class="header">
-        <img src="/assets/home/Group 2.svg" alt="" />
-        <hr />
-        <ul>
-          <li id="home">
-            <a href="index.html"><span>00</span> Home</a>
-          </li>
-          <li id="destination">
-            <a href="destination-moon.html"><span>01</span> Destination</a>
-          </li>
-          <li id="crew">
-            <a href="crew-commander.html"><span>02</span> Crew</a>
-          </li>
-          <li id="technology">
-            <a href="technology-vehicle.html"><span>03</span> Technology</a>
-          </li>
-        </ul>
-
-        <img src="/assets/home/nav-bar.svg" class="nav-bar" id="mars-nav-bar" alt="">
-      </div>
-
+  <div class="mars-container">
+    <section id="mars-page">
       <h1><span>01</span>PICK YOUR DESTINATION</h1>
       <div class="container">
         <div class="left">
@@ -124,51 +108,30 @@
             <li><a href="#titan-page">TITAN</a></li>
           </ul>
 
-           <h1 class="destination">MARS</h1>
-            <p class="paragraph">
-              Don’t forget to pack your hiking boots. You’ll need them to tackle
-              Olympus Mons, the tallest planetary mountain in our solar system.
-              It’s two and a half times the size of Everest!
-            </p>
-            <hr />
-            <div class="details">
-              <div class="details-left">
-                <p>AVG. DISTANCE</p>
-                <h1>225 MIL. KM</h1>
-              </div>
-              <div class="details-right">
-                <p>EST. TRAVEL TIME</p>
-                <h1>9 MONTHS</h1>
-              </div>
+          <h1 class="destination">MARS</h1>
+          <p class="paragraph">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It’s two and a half times the size of Everest!
+          </p>
+          <hr />
+          <div class="details">
+            <div class="details-left">
+              <p>AVG. DISTANCE</p>
+              <h1>225 MIL. KM</h1>
             </div>
+            <div class="details-right">
+              <p>EST. TRAVEL TIME</p>
+              <h1>9 MONTHS</h1>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    </div>
+  </div>
 
-    <div class="europa-container">
-      <section id="europa-page">
-      <div class="header">
-        <img src="/assets/home/Group 2.svg" alt="" />
-        <hr />
-        <ul>
-          <li id="home">
-            <a href="index.html"><span>00</span> Home</a>
-          </li>
-          <li id="destination">
-            <a href="destination-moon.html"><span>01</span> Destination</a>
-          </li>
-          <li id="crew">
-            <a href="crew-commander.html"><span>02</span> Crew</a>
-          </li>
-          <li id="technology">
-            <a href="technology-vehicle.html"><span>03</span> Technology</a>
-          </li>
-        </ul>
-
-        <img src="/assets/home/nav-bar.svg" class="nav-bar" id="europa-nav-bar" alt="">
-      </div>
-
+  <div class="europa-container">
+    <section id="europa-page">
       <h1><span>01</span>PICK YOUR DESTINATION</h1>
       <div class="container">
         <div class="left">
@@ -183,50 +146,30 @@
           </ul>
 
           <h1 class="destination">EUROPA</h1>
-            <p class="paragraph">
-              The smallest of the four Galilean moons orbiting Jupiter, Europa
-              is a winter lover’s dream. With an icy surface, it’s perfect for a
-              bit of ice skating, curling, hockey, or simple relaxation in your
-              snug wintery cabin.
-            </p>
-            <hr />
-            <div class="details">
-              <div class="details-left">
-                <p>AVG. DISTANCE</p>
-                <h1>628 MIL. KM</h1>
-              </div>
-              <div class="details-right">
-                <p>EST. TRAVEL TIME</p>
-                <h1>3 YEARS</h1>
-              </div>
+          <p class="paragraph">
+            The smallest of the four Galilean moons orbiting Jupiter, Europa
+            is a winter lover’s dream. With an icy surface, it’s perfect for a
+            bit of ice skating, curling, hockey, or simple relaxation in your
+            snug wintery cabin.
+          </p>
+          <hr />
+          <div class="details">
+            <div class="details-left">
+              <p>AVG. DISTANCE</p>
+              <h1>628 MIL. KM</h1>
             </div>
+            <div class="details-right">
+              <p>EST. TRAVEL TIME</p>
+              <h1>3 YEARS</h1>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    </div>
+  </div>
 
-    <div class="titan-container"><section id="titan-page">
-      <div class="header">
-        <img src="/assets/home/Group 2.svg" alt="" />
-        <hr />
-        <ul>
-          <li id="home">
-            <a href="index.html"><span>00</span> Home</a>
-          </li>
-          <li id="destination">
-            <a href="destination-moon.html"><span>01</span> Destination</a>
-          </li>
-          <li id="crew">
-            <a href="crew-commander.html"><span>02</span> Crew</a>
-          </li>
-          <li id="technology">
-            <a href="technology-vehicle.html"><span>03</span> Technology</a>
-          </li>
-        </ul>
-
-        <img src="/assets/home/nav-bar.svg" class="nav-bar" id="titan-nav-bar" alt="">
-      </div>
-
+  <div class="titan-container">
+    <section id="titan-page">
       <h1><span>01</span>PICK YOUR DESTINATION</h1>
       <div class="container">
         <div class="left">
@@ -241,42 +184,31 @@
           </ul>
 
           <h1 class="destination">TITAN</h1>
-            <p class="paragraph">
-              The only moon known to have a dense atmosphere other than Earth,
-              Titan is a home away from home (just a few hundred degrees
-              colder!). As a bonus, you get striking views of the Rings of
-              Saturn.
-            </p>
-            <hr />
-            <div class="details">
-              <div class="details-left">
-                <p>AVG. DISTANCE</p>
-                <h1>1.6 BIL. KM</h1>
-              </div>
-              <div class="details-right">
-                <p>EST. TRAVEL TIME</p>
-                <h1>7 YEARS</h1>
-              </div>
+          <p class="paragraph">
+            The only moon known to have a dense atmosphere other than Earth,
+            Titan is a home away from home (just a few hundred degrees
+            colder!). As a bonus, you get striking views of the Rings of
+            Saturn.
+          </p>
+          <hr />
+          <div class="details">
+            <div class="details-left">
+              <p>AVG. DISTANCE</p>
+              <h1>1.6 BIL. KM</h1>
             </div>
+            <div class="details-right">
+              <p>EST. TRAVEL TIME</p>
+              <h1>7 YEARS</h1>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    </div>
+  </div>
+  </div>
+  <div class="testing"></div>
 
-    <div class="panel" id="panel">
-        <div class="panel-icon">
-          <img src="/assets/home/cancel.svg" id="cancel" alt="">
-        </div>
-          <ul class="nav-list" id="nav-list">
-          <li id="home"><a href="index.html"><span>00</span> Home</a></li>
-          <li id="destination"><a href="destination-moon.html"><span>01</span> Destination</a></li>
-          <li id="crew"><a href="crew-commander.html"><span>02</span> Crew</a></li>
-          <li id="technology"><a href="technology-vehicle.html"><span>03</span> Technology</a></li>
-          </ul>
-        </div>
-      </div>
-    <div class="testing"></div>
+  <script src="destination.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>

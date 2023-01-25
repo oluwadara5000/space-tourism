@@ -296,6 +296,10 @@ button {
     margin: 0;
   }
 
+  #cancel {
+    margin: 0;
+  }
+
   hr {
     display: none;
   }
@@ -304,8 +308,7 @@ button {
     display: none;
   }
 
-  #nav-bar,
-  #cancel {
+  #nav-bar {
     display: block;
     margin-right: 25px;
   }
