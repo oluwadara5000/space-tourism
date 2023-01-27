@@ -607,6 +607,10 @@ display: flex;
     letter-spacing: 2.3625px;
   }
 
+  .header ul > li span{
+    display: none;
+  }
+
   #logo{
     margin-left: 39px;
     margin-right: 0;

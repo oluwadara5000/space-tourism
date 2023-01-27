@@ -529,6 +529,10 @@ button {
     letter-spacing: 2.3625px;
   }
 
+  .header ul > li span{
+    display: none;
+  }
+
   .home-content {
     flex-direction: column;
     gap: 156px;
