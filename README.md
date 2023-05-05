@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/oluwadara5000/space-tourism]
-- Live Site URL: [https://space-entourage.netlify.app/]
+- Solution URL: [GitHub Repo](https://github.com/oluwadara5000/space-tourism)
+- Live Site URL: [Live Link](https://space-entourage.netlify.app/)
 
 ## My process
 
@@ -82,3 +82,8 @@ closeMenu.addEventListener("click", function () {
 });
 
 ```
+
+## Author
+
+- Website - [GitHub](https://github.com/oluwadara5000)
+- Frontend Mentor - [@oluwadara5000](https://www.frontendmentor.io/profile/oluwadara5000)
